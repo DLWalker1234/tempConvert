@@ -1,13 +1,15 @@
 console.log('start');
 
 var inputTemp = document.getElementById("temp");
-inputTemp.addEventListener("click", function() {
-	console.log("event");
+var button = document.getElementById("switchTemp");
+
+switchTemp.addEventListener("click", function() {
+	console.log("event",inputTemp.value);
 })
 
 function toCelsius () {
 	inputTemp = (((inputTemp - 32)*5)/9);
-}
+};
 
 function toFahrenheit (inputTemp) {
 	inputTemp = ((inputTemp*9)/5)+32;
